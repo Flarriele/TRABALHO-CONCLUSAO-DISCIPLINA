@@ -1,19 +1,19 @@
 Atualização para teste do gatilho push.
 # Trabalho – Integração Contínua para Automação de Testes
 
-## Objetivo
+# Objetivo
 
 Implementar uma pipeline de Integração Contínua (CI) utilizando GitHub Actions para execução automatizada de testes, geração de relatório e publicação dos resultados.
 
-## Projeto Utilizado
+# Projeto Utilizado
 
-Para o desenvolvimento desta atividade foi utilizado o projeto criado na disciplina **Programação para Automação de Testes**, contendo testes automatizados desenvolvidos com Node.js e Mocha.
+Para o desenvolvimento desta atividade foi utilizado o projeto criado na disciplina Programação para Automação de Testes, contendo testes automatizados desenvolvidos com Node.js e Mocha.
 
-## Conceito de Integração Contínua (CI)
+# Conceito de Integração Contínua (CI)
 
 Integração Contínua (Continuous Integration - CI) é uma prática de desenvolvimento de software que consiste em integrar alterações de código frequentemente em um repositório compartilhado. A cada alteração, processos automatizados são executados para validar a qualidade da aplicação, reduzindo riscos e identificando problemas rapidamente.
 
-## Conceito de Pipeline
+# Conceito de Pipeline
 
 Uma pipeline é um fluxo automatizado composto por etapas que são executadas de forma sequencial. Neste projeto, a pipeline realiza:
 
@@ -24,7 +24,7 @@ Uma pipeline é um fluxo automatizado composto por etapas que são executadas de
 5. Geração de relatório.
 6. Publicação do relatório como artefato.
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 * GitHub Actions
 * Node.js
@@ -32,13 +32,13 @@ Uma pipeline é um fluxo automatizado composto por etapas que são executadas de
 * Git
 * GitHub
 
-## Estrutura da Pipeline
+# Estrutura da Pipeline
 
 Arquivo:
 
 .github/workflows/ci.yml
 
-### Etapas executadas
+# Etapas executadas
 
 * Checkout do código.
 * Instalação das dependências com npm install.
@@ -46,17 +46,17 @@ Arquivo:
 * Geração do relatório de execução.
 * Publicação do relatório como artefato da pipeline.
 
-## Tipos de Execução Implementados
+# Tipos de Execução Implementados
 
-### Execução por Push
+# Execução por Push
 
 A pipeline é executada automaticamente sempre que um novo commit é enviado para o repositório.
 
-### Execução Manual
+# Execução Manual
 
-A execução manual é realizada através da opção **Run Workflow** disponível na aba Actions do GitHub.
+A execução manual é realizada através da opção Run Workflow disponível na aba Actions do GitHub.
 
-### Execução Agendada
+# Execução Agendada
 
 A execução agendada foi configurada utilizando expressão CRON:
 
@@ -64,7 +64,7 @@ A execução agendada foi configurada utilizando expressão CRON:
 
 Esta configuração executa a pipeline toda segunda-feira às 12:00 UTC.
 
-## Execução dos Testes
+# Execução dos Testes
 
 Para executar os testes localmente:
 
@@ -78,7 +78,7 @@ Resultado esperado:
 * 2 testes executados com sucesso.
 * Nenhuma falha encontrada.
 
-## Relatórios
+# Relatórios
 
 Ao final da execução, a pipeline gera um relatório contendo o resultado da execução dos testes.
 
@@ -86,7 +86,7 @@ O relatório é armazenado como artefato do GitHub Actions com o nome:
 
 relatorio-testes
 
-## Evidências
+# Evidências
 
 Inserir nesta seção as capturas de tela:
 
